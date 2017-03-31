@@ -106,6 +106,8 @@ select
   padding: 30px 0 10px
 .about--content
   background-color: $blue
+  .about--content
+    padding-top: 20px
   p
     color: white
   img
@@ -188,3 +190,24 @@ select
   img
     width: 40%
     min-width: 300px
+
+
+@media screen and (max-width: 550px)
+  .submit
+    .form,
+    .submitter
+      height: auto
+      margin: 20px 0
+    .submitter
+      padding-top: 20px
+  .container
+    width: 100%
+  .row
+    padding: 0 10px
+    &.landing_row, &.header
+      padding: 0
+  .about--content
+    .about--content
+      padding-top: 0
+    img
+      margin: -10px 0 0

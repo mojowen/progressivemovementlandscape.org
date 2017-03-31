@@ -98,6 +98,8 @@ select {
 
 .about--content {
   background-color: #16acf7; }
+  .about--content .about--content {
+    padding-top: 20px; }
   .about--content p {
     color: white; }
   .about--content img {
@@ -174,3 +176,21 @@ select {
   .footer--logo img {
     width: 40%;
     min-width: 300px; }
+
+@media screen and (max-width: 550px) {
+  .submit .form,
+  .submit .submitter {
+    height: auto;
+    margin: 20px 0; }
+  .submit .submitter {
+    padding-top: 20px; }
+  .container {
+    width: 100%; }
+  .row {
+    padding: 0 10px; }
+    .row.landing_row, .row.header {
+      padding: 0; }
+  .about--content .about--content {
+    padding-top: 0; }
+  .about--content img {
+    margin: -10px 0 0; } }
