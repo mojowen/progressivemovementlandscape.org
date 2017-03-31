@@ -187,9 +187,11 @@ select {
   .container {
     width: 100%; }
   .row {
-    padding: 0 10px; }
+    padding-left: 16px;
+    padding-right: 16px; }
     .row.landing_row, .row.header {
-      padding: 0; }
+      padding-left: 0;
+      padding-right: 0; }
   .about--content .about--content {
     padding-top: 0; }
   .about--content img {
