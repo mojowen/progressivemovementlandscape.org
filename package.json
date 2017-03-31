@@ -1,0 +1,32 @@
+{
+  "name": "ProgressiveMovementLandscape",
+  "version": "1.0.0",
+  "description": "Get engaged!",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch & npm run livereload & npm run static",
+    "watch": "npm run css",
+    "css": "node-sass -w styles/app.sass app.css",
+    "livereload": "livereloadify .",
+    "static": "static ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mojowen/progressivemovementlandscapedotorg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mojowen/progressivemovementlandscapedotorg/issues"
+  },
+  "homepage": "https://github.com/mojowen/progressivemovementlandscapedotorg#readme",
+  "dependencies": {
+    "skeleton-css": "^2.0.4"
+  },
+  "devDependencies": {
+    "node-sass": "^3.7.0",
+    "livereloadify": "^2.0.0",
+    "node-static": "^0.7.7",
+    "watchify": "^3.7.0"
+  }
+}
