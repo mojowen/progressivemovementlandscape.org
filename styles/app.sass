@@ -156,6 +156,7 @@ select
     &.yellow
       &, &:hover, &:active
         color: white
+      position: relative
       &:after
         content: ''
         border: 4px solid transparent
@@ -202,12 +203,19 @@ select
       padding-top: 20px
   .container
     width: 100%
+    padding: 0
+    overflow: auto
   .row
     padding-left: 16px
     padding-right: 16px
     &.landing_row, &.header
       padding-left: 0
       padding-right: 0
+  .landing h1
+    font-size: 30px
+  .contact form
+    padding: 0 5%
+
   .about--content
     .about--content
       padding-top: 0
