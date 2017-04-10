@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Progressive Movement Landscape</title>
   <link rel="stylesheet" type="text/css" href="app.css">
+  <script type="text/javascript" src="app.js"></script>
+  <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
   <link rel="icon" type="image/png" href="/images/favicon.png" />
 </head>
 <body>
@@ -52,12 +54,12 @@
       </div>
     </div>
     <div class="row submit" id="submit">
-      <form>
+      <form onsubmit="return openForm(this)" data-target="https://airtable.com/embed/shrZs8HjKSyAg1PGV">
         <div class="seven columns form">
           <h3>Update Information</h3>
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email">
-          <input type="url" name="website" placeholder="website">
+          <input type="text" name="Contact Name" placeholder="Name">
+          <input type="email" name="Contact Email" placeholder="Email">
+          <input type="url" name="Website" placeholder="Website">
         </div>
         <div class="four columns submitter">
           <h1>
@@ -71,7 +73,7 @@
     <div class="row contact" id="contact">
       <div class="twelve columns">
         <h2>Contact Us</h2>
-        <form>
+        <form onsubmit="return openForm(this)" data-target="https://airtable.com/embed/shrfKDv0uC91DMfZm">
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email">
           <input type="text" name="subject" placeholder="Subject">
@@ -95,6 +97,15 @@
         <p style="font-size: 12px; margin-top: 2rem; color: white">with help from Movement 2017 &amp; GameChanger Labs</p>
       </div>
     </div>
+  </div>
+
+  <div id="modal" style="display: none">
+    <div class="modal">
+      <div class="inner">
+        <iframe class="airtable-embed airtable-dynamic-height" src="" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+      </div>
+    </div>
+    <div class="overlay" ></div>
   </div>
 </body>
 </html>
