@@ -37,6 +37,13 @@ select {
   padding-top: 40px;
   text-align: center; }
 
+@media (min-width: 550px) {
+  .container {
+    width: 100%; } }
+
+.container {
+  max-width: inherit; }
+
 .overlay {
   top: 0;
   left: 0;
