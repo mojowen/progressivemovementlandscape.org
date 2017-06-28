@@ -107,6 +107,7 @@ select {
       height: 120px; }
     .contact form input[type=submit] {
       width: 120px;
+      text-decoration: none;
       background-color: #fb3f5c;
       color: white;
       border: none;
@@ -139,11 +140,21 @@ select {
       text-transform: uppercase;
       font-size: 40px;
       font-weight: bold; }
-    .submit .submitter input[type=submit] {
+    .submit .submitter input[type=submit], .submit-mobile {
       background-color: white;
       border-radius: 0;
       font-weight: bold;
+      text-decoration: none;
       border: none; }
+
+.submit-mobile  {
+  color: black;
+  font-size: 11px;
+  padding: 12px 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: none;
+}
 
 .about--title {
   background-color: white;
@@ -234,6 +245,8 @@ select {
     min-width: 300px; }
 
 @media screen and (max-width: 550px) {
+  .submit-mobile { display: inline-block !important; margin-bottom: 10px;}
+  .submit .submitter input[type=submit] { display: none !important; }
   .submit .form,
   .submit .submitter {
     height: auto;
